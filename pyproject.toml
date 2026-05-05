@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "team-task-manager"
+version = "0.1.0"
+description = "Full stack task manager"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "python-dotenv",
+    "sqlalchemy",
+    "psycopg2-binary"
+]
+
+[project.scripts]
+app = "api.index:app"

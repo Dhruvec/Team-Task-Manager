@@ -17,3 +17,6 @@ dependencies = [
 
 [project.scripts]
 app = "api.index:app"
+
+[tool.vercel]
+entrypoint = "backend.server:app"

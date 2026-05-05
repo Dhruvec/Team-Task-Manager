@@ -10,11 +10,11 @@ sys.path.append(str(current_dir))
 
 # Try to import the app from the backend
 try:
-    from backend.app.main import app
+    from backend.app.app import app
 except ImportError:
     # Fallback or diagnostic
     sys.path.append(str(current_dir / "backend" / "app"))
-    from main import app
+    from app import app
 
 # Vercel looks for 'app' by default if not specified, 
 # but naming it 'app' is standard.
